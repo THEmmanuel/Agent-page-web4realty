@@ -21,16 +21,28 @@ const renderAgentProperties = () => {
 
     const propertyRows = properties.map(property => {
         return `<li>
-            <div class = "property-card">
-            <img src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png" alt="">
+      
+        <div class="property-card">
+            <span class="property-status">${property.status}</span>
+            <img src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png"
+            alt="">
 
-            <span>${property.price}</span>
-            <span>${property.address}</span>
-            <span>${property.status}</span>
-            <span>solld by ...</span>
-            
-    
-            </div>
+            <div class="property-information-wrapper">
+            <div class="property-information">
+            <span class="property-price">${property.price}</span>
+            <span class="property-address">${property.address}</span>
+            <span class ="property-market">${property.market}</span>
+        </div>
+
+        <button class="property-share-btn">
+            share
+        </button>
+
+    </div>
+    <span>solld by ...</span>
+
+
+</div>
         </li>`
     })
 
