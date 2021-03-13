@@ -33,3 +33,6 @@ const properties = [
 ]
 
 export default properties;
+
+
+properties
