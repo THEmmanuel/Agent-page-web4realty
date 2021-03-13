@@ -1,9 +1,16 @@
 import {
-    properties
+    agentProfile, properties, 
 } from "./mockAPI.js";
 
-const propertiesList = document.querySelector('.properties')
+const propertiesList = document.querySelector('.properties');
+const agentProfilePicture = document.querySelector('.agent-profle-picture');
+const agentName = document.querySelector('.agent-profile-name');
 
+
+const renderAgentProfile = () => {
+    // agentProfilePicture.src = agentProfile.profile_picture;
+    agentName.innerHTML = agentProfile.name;
+}  
 
 const renderAgentProperties = () => {
     const propertyRows = properties.map(property => {
@@ -19,3 +26,4 @@ const renderAgentProperties = () => {
 }
 
 renderAgentProperties();
+renderAgentProfile();

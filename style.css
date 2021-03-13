@@ -16,7 +16,7 @@ body {
 .agent-profile-side {
     flex: 3;
     height: 100vh;
-    color: white;
+    /* color: white; */
     overflow: scroll;
     line-height: 300px;
 }

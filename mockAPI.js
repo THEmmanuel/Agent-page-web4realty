@@ -1,13 +1,21 @@
-export const agent = {
+// Sine I don't have access to the API for ratemyagent.com. I decided to create this file to simulate the API data with made up placeholder values.
+
+
+//Data for the ficitous agent's profile.
+export const agentProfile = {
     name: "John Doe",
+    email: 'johndoe@email.com',
+    phone: '+41785742568',
+    rating: '5',
+    profile_picture: "https://thispersondoesnotexist.com/image",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
     website: 'johndoe.com',
     facebook: 'https://www.facebook.com/johndoe',
     intro_video: 'youtube.link'
-
 }
 
 
+//Property data.
 export const properties = [{
         id: '01',
         name: '1975 Blooming Hills Dr, Prescott, AZ, 86301',
