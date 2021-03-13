@@ -7,9 +7,9 @@ body {
 }
 
 /* Styling for the navigation bar */
-.navigation-bar{
+.navigation-bar {
     background-color: aquamarine;
-    
+
 }
 
 /* Styling for the agent's profile on the left side of the page */
@@ -25,13 +25,19 @@ body {
 .agent-properties {
     flex: 10;
     height: 100vh;
-    background-color: pink;
     overflow: scroll;
-    line-height: 350px;
+    /* line-height: 350px; */
 }
 
 .property-list {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 15px;
+}
+
+.property-card {
+    width: 300px;
+    max-width: 400px;
+    height: 450px;
+    background-color: darkblue;
 }
