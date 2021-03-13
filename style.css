@@ -16,7 +16,6 @@ body {
 .agent-profile-side {
     flex: 3;
     height: 100vh;
-    /* color: white; */
     overflow: scroll;
     line-height: 300px;
 }
@@ -26,7 +25,6 @@ body {
     flex: 10;
     height: 100vh;
     overflow: scroll;
-    /* line-height: 350px; */
 }
 
 .property-list {
@@ -45,7 +43,6 @@ body {
 .property-status{
     border-radius: 50px;
     position: fixed;
-    /* right: 10px; */
     margin-left: 220px;
     margin-top: 10px;
     background-color: #ff6559;
