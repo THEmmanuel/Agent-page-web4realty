@@ -8,10 +8,9 @@ body {
 
 /* This part contains styling for the agent's profile on the side of the page */
 .agent-profile-side {
-    flex: 2;
+    flex: 3;
     height: 100vh;
     color: white;
-    background-color: black;
     overflow: scroll;
     line-height: 300px;
 }
@@ -22,4 +21,9 @@ body {
     background-color: pink;
     overflow: scroll;
     line-height: 300px;
+}
+
+.properties {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
