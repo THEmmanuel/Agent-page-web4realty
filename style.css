@@ -6,7 +6,13 @@ body {
     display: flex;
 }
 
-/* This part contains styling for the agent's profile on the side of the page */
+/* Styling for the navigation bar */
+.navigation-bar{
+    background-color: aquamarine;
+    
+}
+
+/* Styling for the agent's profile on the left side of the page */
 .agent-profile-side {
     flex: 3;
     height: 100vh;
@@ -15,15 +21,17 @@ body {
     line-height: 300px;
 }
 
+/* Styling for agents properties list on the right side of the page*/
 .agent-properties {
     flex: 10;
     height: 100vh;
     background-color: pink;
     overflow: scroll;
-    line-height: 300px;
+    line-height: 350px;
 }
 
-.properties {
+.property-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    grid-gap: 15px;
 }
