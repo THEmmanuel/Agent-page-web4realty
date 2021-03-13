@@ -39,5 +39,14 @@ body {
     width: 300px;
     max-width: 400px;
     height: 450px;
-    background-color: darkblue;
+    background-color: grey;
+}
+
+.property-card span {
+    display: block;
+}
+
+.property-price{
+    font-size: 1.5em;
+    
 }
