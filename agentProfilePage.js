@@ -1,5 +1,9 @@
-const testArray =['1', '2', '3']
+import {properties} from "./mockAPI";
 
 const renderAgentProperties = () => {
-    const properties = pr
+    const propertyRows = properties.map(property => {
+       return `<li>
+            <div class = "card">
+        </li>`
+    })
 }
