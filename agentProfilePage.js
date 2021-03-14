@@ -21,7 +21,7 @@ const renderAgentProperties = () => {
     const propertiesList = document.querySelector('.properties');
 
     const propertyRows = properties.map(property => {
-        return `<li>
+        return (`<li>
         <div class="property-card">
         <div>
         <span class="property-status">${property.status}</span>
@@ -69,10 +69,10 @@ const renderAgentProperties = () => {
 
             <span class="property-sold-date">Sold by private sale on</span>
         </div>
-    </li>`
+    </li>`)
     })
 
-    const propertiesContent = `<ul class = "property-list">${propertyRows.join()}</ul>`;
+    const propertiesContent = `<ul class = "property-list">${propertyRows.join("")}</ul>`;
     propertiesList.innerHTML = propertiesContent;
 }
 
