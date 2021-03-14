@@ -10,6 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="agent.css">
+    <link rel="stylesheet" href="properties.css">
     <title>Agent Profile</title>
     <script type="module" src="./agentProfilePage.js"></script>
 </head>
@@ -21,9 +23,11 @@
 
     <div class="container">
         <aside class="agent-profile-side">
-            <img class="agent-profile-picture">
-            <span class="agent-rating"></span>
-            <h2 class="agent-profile-name"></h2>
+            <div>
+                <img class="agent-profile-picture" src="">
+                <span class="agent-rating"></span>
+                <h2 class="agent-profile-name"></h2>
+            </div>
             <span class="agent-bio"></span>
         </aside>
 
@@ -32,29 +36,6 @@
             </section>
         </main>
     </div>
-
-    `<li>
-        <div class="property-card">
-            <span class="property-status">${property.status}</span>
-            <img class="property-image"
-                src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png">
-
-            <div class="property-information-wrapper">
-                <div class="property-information">
-                    <span class="property-price">${property.price}</span>
-                    <span class="property-address">${property.address}</span>
-                    <span class="property-market">${property.market}</span>
-                </div>
-
-                <button class="property-share-btn">
-                    share
-                </button>
-            </div>
-
-
-            <span>solld by ...</span>
-        </div>
-    </li>`
 </body>
 
 </html>

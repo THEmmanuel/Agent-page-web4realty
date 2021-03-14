@@ -5,7 +5,7 @@ import {
 
 
 const renderAgentProfile = () => {
-    const agentProfilePicture = document.querySelector('.agent-profle-picture');
+    const agentProfilePicture = document.querySelector('.agent-profile-picture');
     const agentName = document.querySelector('.agent-profile-name');
     const agentBio = document.querySelector('.agent-bio');
     const agentRating = document.querySelector('.agent-rating');
@@ -14,6 +14,7 @@ const renderAgentProfile = () => {
     agentName.innerHTML = agentProfile.name;
     agentRating.innerHTML = agentProfile.rating;
     agentBio.innerHTML = agentProfile.bio;
+    agentProfilePicture.src = agentProfile.profile_picture;
 }
 
 const renderAgentProperties = () => {
@@ -22,9 +23,11 @@ const renderAgentProperties = () => {
     const propertyRows = properties.map(property => {
         return `<li>
         <div class="property-card">
-            <span class="property-status">${property.status}</span>
-            <img class="property-image"
-                src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png">
+        <div>
+        <span class="property-status">${property.status}</span>
+        <img class="property-image"
+            src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png">
+        </div>
     
             <div class="property-information-wrapper">
                 <div class="property-information">
@@ -59,13 +62,12 @@ const renderAgentProperties = () => {
                 class="property-information-icon" />
             <span>2</span>
         </div>
-            | 
-            <span>Condo</span>
+            <span class = "property-type">Condo</span>
         </div>
         
             </div>
 
-            <span>solld by ...</span>
+            <span class="property-sold-date">Sold by private sale on</span>
         </div>
     </li>`
     })

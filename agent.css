@@ -1,0 +1,12 @@
+.agent-profile-side {
+    flex: 3;
+    height: 100vh;
+    overflow: scroll;
+    /* line-height: 300px; */
+}
+
+.agent-profile-picture{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
