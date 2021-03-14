@@ -21,29 +21,53 @@ const renderAgentProperties = () => {
 
     const propertyRows = properties.map(property => {
         return `<li>
-      
         <div class="property-card">
             <span class="property-status">${property.status}</span>
-            <img src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png"
-            alt="">
-
+            <img class="property-image"
+                src="https://images.ratemyagent.com/ratemyagent/image/upload/q_auto:eco,f_auto,w_900,h_600,c_limit/cdn-usa/listing/329ec365-b4d3-43a2-83d0-d51624b72ac0.png">
+    
             <div class="property-information-wrapper">
-            <div class="property-information">
-            <span class="property-price">${property.price}</span>
-            <span class="property-address">${property.address}</span>
-            <span class ="property-market">${property.market}</span>
+                <div class="property-information">
+                    <span class="property-price">$${property.price}</span>
+                    <span class="property-address">${property.address}</span>
+                    <span class="property-market">${property.market}</span>
+                </div>
+    
+                <button class="property-share-btn">
+                    share
+                </button>
+
+            </div>
+
+            <div class="property-additional-information">
+
+            <div class="property-icons-wrapper">
+            <div>
+            <img src="https://img.icons8.com/android/16/000000/bedroom.png"
+                class="property-information-icon" />
+            <span>2</span>
         </div>
 
-        <button class="property-share-btn">
-            share
-        </button>
+        <div>
+            <img src="https://img.icons8.com/android/16/000000/bedroom.png"
+                class="property-information-icon" />
+            <span>2</span>
+        </div>
 
-    </div>
-    <span>solld by ...</span>
+        <div>
+            <img src="https://img.icons8.com/android/16/000000/bedroom.png"
+                class="property-information-icon" />
+            <span>2</span>
+        </div>
+            | 
+            <span>Condo</span>
+        </div>
+        
+            </div>
 
-
-</div>
-        </li>`
+            <span>solld by ...</span>
+        </div>
+    </li>`
     })
 
     const propertiesContent = `<ul class = "property-list">${propertyRows.join()}</ul>`;
