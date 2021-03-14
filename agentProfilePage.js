@@ -9,12 +9,27 @@ const renderAgentProfile = () => {
     const agentName = document.querySelector('.agent-profile-name');
     const agentBio = document.querySelector('.agent-bio');
     const agentRating = document.querySelector('.agent-rating');
+    const agentMarketsList = document.querySelector('.agent-markets-list')
 
-    // agentProfilePicture.src = agentProfile.profile_picture;
-    agentName.innerHTML = agentProfile.name;
+    agentName.innerHTML = `${agentProfile.first_name + " " + agentProfile.last_name}`;
     agentRating.innerHTML = agentProfile.rating;
     agentBio.innerHTML = agentProfile.bio;
     agentProfilePicture.src = agentProfile.profile_picture;
+
+    const renderAgentMarkets = () => {
+        const agentMarketRows = agentProfile.markets.map(market => {
+            return (`<li>
+                <span>
+                    ${agentProfile.markets[0]}
+                </span>
+            </li>`)
+        })
+        
+        const agentMarketContent = `<ul class = "agent-markets-list">${agentMarketRows.join("")}</ul>`;
+        agentMarketsList.innerHTML = agentMarketContent;
+    }
+
+    renderAgentMarkets();
 }
 
 const renderAgentProperties = () => {

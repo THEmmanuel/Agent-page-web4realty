@@ -3,7 +3,8 @@
 
 //Data for the ficitous agent's profile.
 export const agentProfile = {
-    name: "John Doe",
+    first_name: "John",
+    last_name: "Doe",
     email: 'johndoe@email.com',
     phone: '+41785742568',
     rating: '5',
@@ -28,6 +29,53 @@ export const agentProfile = {
 
 //Property data.
 export const properties = [{
+        id: '01',
+        address: '1975 Blooming Hills Dr',
+        market: 'Prescott,AZ, 86301',
+        price: '269,000',
+        bedroom_number: '3',
+        bathroom_number: '2',
+        status: 'Sold',
+        type: 'condo',
+        carspace_number: '2',
+    },
+
+    {
+        id: '01',
+        address: '1975 Blooming Hills Dr',
+        market: 'Prescott,AZ, 86301',
+        price: '269,000',
+        bedroom_number: '3',
+        bathroom_number: '2',
+        status: 'Sold',
+        type: 'condo',
+        carspace_number: '2',
+    },
+
+    {
+        id: '01',
+        address: '1975 Blooming Hills Dr',
+        market: 'Prescott,AZ, 86301',
+        price: '269,000',
+        bedroom_number: '3',
+        bathroom_number: '2',
+        status: 'Sold',
+        type: 'condo',
+        carspace_number: '2',
+    },
+
+    {
+        id: '01',
+        address: '1975 Blooming Hills Dr',
+        market: 'Prescott,AZ, 86301',
+        price: '269,000',
+        bedroom_number: '3',
+        bathroom_number: '2',
+        status: 'Sold',
+        type: 'condo',
+        carspace_number: '2',
+    },
+    {
         id: '01',
         address: '1975 Blooming Hills Dr',
         market: 'Prescott,AZ, 86301',
