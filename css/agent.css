@@ -188,4 +188,8 @@
     .contact-button{
         width: 40%;
     }
+
+    .agent-profile-side{
+        border-bottom: #808080 2px solid;
+    }
 }

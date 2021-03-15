@@ -1,7 +1,7 @@
 import {
     agentProfile,
     properties,
-} from "./mockAPI.js";
+} from './mockAPI.js';
 
 
 const renderAgentProfile = () => {
