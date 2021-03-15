@@ -22,9 +22,17 @@
 .property-card {
     width: 360px;
     height: 450px;
-    background-color: #DCDCDC;
+    background-color: #D3D3D3;
+    color: #696969;
     /* margin: auto auto 15px auto; */
-    justify-self: center
+    justify-self: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    /* transition: all 1s; */
+}
+
+.property-card:hover {
+    background-color: #A9A9A9
 }
 
 .property-status {
@@ -55,6 +63,7 @@
     font-size: 1.3em;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #1A1A1A;
 
 }
 
@@ -66,7 +75,18 @@
     border-radius: 50%;
     position: relative;
     left: 100px;
+    color: #359692;
+    border: #359692 1px solid;
+    background-color: transparent;
+    background-image: url(https://img.icons8.com/ios-glyphs/24/359692/share--v1.png);
+    background-repeat: no-repeat;
+    background-position: center;
     /* margin-top: 25px; */
+}
+
+.property-share-btn:hover{
+    background-color: #359692;
+    background-image: url(https://img.icons8.com/ios-glyphs/24/FFFFFF/share--v1.png);    
 }
 
 .property-information {
@@ -112,7 +132,7 @@
 }
 
 .property-sold-date {
-    padding-top: 10px;
+    padding-top: auto;
     margin-left: 25px;
 }
 

@@ -19,7 +19,7 @@
 .agent-profile-name {}
 
 .agent-profile-side h2 {
-    border-bottom: 1px #00ff00 solid;
+    border-bottom: 1px #D1D3D5 solid;
     line-height: 50px;
     margin: 20px;
 }
@@ -39,20 +39,43 @@
     width: 200px;
     height: 35px;
     margin: 10px;
-    border: 1px #00FF00 solid;
+    border: 1px #00837B solid;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #0075E4;;
+}
+
+.contact-button:hover {
+    border: none;
+    color: #FFF;
+    background-color: #00837B;
 }
 
 .email-contact-button {
-    background-color: #00FF00;
+    background-color: #0075E4;
+    color: #FFF;
+    border: none;
+}
+
+.email-contact-button:hover {
+    background-color: #004585;
 }
 
 .agent-market {
     list-style: none;
     margin-right: 10px;
     padding: 10px 15px;
-    background-color: yellow;
+    background-color: #C0C0C0;
+    transition: all 0.5s ease-in-out;
     border-radius: 50px;
+    cursor: pointer;
 }
+
+.agent-market:hover {
+    background-color: #A9A9A9
+}
+
 
 .agent-markets-list {
     display: flex;
@@ -60,11 +83,15 @@
 }
 
 .agent-contact {
-    border-bottom: 1px blue solid;
+    border-bottom: 1px #DEDEDE solid;
     padding: 20px;
     display: flex;
     flex-direction: row;
     /* font-size: ; */
+}
+
+.agent-contact img {
+    padding-right: 20px;
 }
 
 .agent-ranking {
@@ -86,5 +113,33 @@
     font-size: 2em;
     font-weight: 700;
     margin-right: 15px;
-    background-color: #00FF00;
+    background-color: #FBB116;
+}
+
+.agent-ranking-picture{
+    width: fit-content;
+    height: fit-content;
+}
+
+.agent-rating-wrapper{
+    margin: auto;
+    text-align: center;
+    margin-top: -25px;
+    z-index: 800;
+    position: relative;
+    display: flex;
+    padding: 3px 15px;
+    background-color: #FBB116;
+    width: 45px;
+    border-radius: 100px;
+    color: #FFF;
+}
+
+.agent-rating{
+    font-size: large;
+    margin-left: 5px;
+}
+
+.agent-rating-wrapper img{
+
 }
