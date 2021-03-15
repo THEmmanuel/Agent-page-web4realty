@@ -10,11 +10,15 @@ const renderAgentProfile = () => {
     const agentBio = document.querySelector('.agent-bio');
     const agentRating = document.querySelector('.agent-rating');
     const agentMarketsList = document.querySelector('.agent-markets-list')
+    const agentRole = document.querySelector('.agent-role')
 
     agentName.innerHTML = `${agentProfile.first_name + " " + agentProfile.last_name}`;
     agentRating.innerHTML = agentProfile.rating;
     agentBio.innerHTML = agentProfile.bio;
+    agentRole.innerHTML = agentProfile.role
     agentProfilePicture.src = agentProfile.profile_picture;
+
+
 
     const renderAgentMarkets = () => {
         const agentMarketRows = agentProfile.markets.map(market => {
@@ -80,7 +84,7 @@ const renderAgentProperties = () => {
         
             </div>
 
-            <span class="property-sold-date">Sold by private sale on</span>
+            <span class="property-sold-date">Sold by private sale on ${property.date_sold}</span>
         </div>
     </li>`)
     })

@@ -5,6 +5,7 @@
 export const agentProfile = {
     first_name: "John",
     last_name: "Doe",
+    role: "Realtor® / Buyer's Agent",
     email: 'johndoe@email.com',
     phone: '+41785742568',
     rating: '5',
@@ -39,6 +40,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020" 
     },
 
     {
@@ -52,6 +54,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
 
     {
@@ -65,6 +68,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
 
     {
@@ -78,6 +82,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
     {
         id: '01',
@@ -90,6 +95,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
 
     {
@@ -103,6 +109,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
 
     {
@@ -116,6 +123,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
 
     {
@@ -129,6 +137,7 @@ export const properties = [{
         status: 'Sold',
         type: 'condo',
         carspace_number: '2',
+        date_sold: "23 Dec 2020"
     },
 ]
 // properties

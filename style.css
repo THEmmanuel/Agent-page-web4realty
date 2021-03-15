@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    /* padding: 15px; */
 }
 
 .container {
@@ -11,6 +12,13 @@ body {
 .navigation-bar {
     background-color: aquamarine;
 
+}
+
+@media (max-width: 770px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* Styling for the agent's profile on the left side of the page */

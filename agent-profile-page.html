@@ -12,14 +12,82 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="agent.css">
     <link rel="stylesheet" href="properties.css">
+    <link rel="stylesheet" href="nav.css">
     <title>Agent Profile</title>
     <script type="module" src="./agentProfilePage.js"></script>
 </head>
 
 <body>
-    <nav class="navigation-bar">
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <div class="site-header__start">
+                <nav class="nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#">About</a></li>
+                        <li class="nav__item"><a href="#">Services</a></li>
+                        <li class="nav__item"><a href="#">Hire us</a></li>
+                        <li class="nav__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <img class="logo" src="https://static.ratemyagent.com/assets/images/logos/logo-dark.svg" alt="">
 
-    </nav>
+                <div class="search">
+                    <button class="search__toggle" aria-label="Open search">
+                        Search
+                    </button>
+                    <form class="search__form" action="">
+                        <label class="sr-only" for="search"><img
+                                src="https://img.icons8.com/ios/24/000000/search--v1.png" /> Search</label>
+                    </form>
+                </div>
+            </div>
+            <div class="site-header__end">
+                <ul class="sub-nav">
+                    <li class=""><a href="#">
+                            <div>
+                                <div class="nav-btn-icon">
+                                    <img src="https://img.icons8.com/material-two-tone/16/000000/filled-like.png" />
+                                    <div>
+                                        <span>Tracked</span>
+                                        <span class = "number-indicator">0</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a></li>
+
+                    <li class=""><a href="#">
+                            <div>
+                                <div class="nav-btn-icon">
+                                    <img
+                                        src="https://img.icons8.com/fluent-systems-regular/16/000000/compare--v2.png" />
+                                    <div>
+                                        <span>Compare</span>
+                                        <span class="number-indicator">0</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a></li>
+                    <li class=""><a href="#">
+
+                            <div class="nav-btn join-btn">
+                                Join
+                            </div>
+                        </a></li>
+
+                    <li class=""><a href="#">
+                            <div class="nav-btn">
+                                Log in
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
 
     <div class="container">
         <aside class="agent-profile-side">

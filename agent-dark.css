@@ -2,7 +2,7 @@
     flex: 4;
     height: 100vh;
     overflow: scroll;
-    width: 100%;
+    background-color: #333333;
     /* line-height: 300px; */
 }
 
@@ -148,13 +148,10 @@
     margin-left: 5px;
 }
 
-@media (max-width: 770px){
-    .agent-profile-side {
-        flex: none;
-        height: 100vh;
-        overflow: scroll;
-        width: 100%;
-        overflow: hidden;
-        /* line-height: 300px; */
-    }
+.agent-market{
+    
+}
+
+.agent-rating-wrapper img{
+
 }
