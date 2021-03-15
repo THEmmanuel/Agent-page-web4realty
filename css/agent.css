@@ -164,6 +164,10 @@
         /* line-height: 300px; */
     }
 
+    .agent-profile-picture{
+        margin-top: 200px;
+    }
+
     .contact-buttons{
         position: fixed;
         bottom: 0;

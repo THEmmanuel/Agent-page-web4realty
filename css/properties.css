@@ -160,7 +160,7 @@
     }  
 
     .property-additional-information div{
-        width: 70%
+        width: 90%
     }
 
     .property-card {
@@ -186,6 +186,10 @@
 
     .property-list{
         margin-bottom: 50px;
+    }
+
+    .property-card{
+        height: 480px;
     }
 
     ul{
