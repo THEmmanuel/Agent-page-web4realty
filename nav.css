@@ -141,7 +141,9 @@ span{
 }
 
 .search__toggle {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     order: 1;
     font-size: 0;
     width: 34px;
@@ -198,7 +200,9 @@ span{
 
 .search__form input {
     min-width: 200px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     border: 0;
     background-color: #fff;
     border-radius: 0;
