@@ -139,6 +139,7 @@
     padding: 3px 15px;
     background-color: #FBB116;
     width: 45px;
+    font-weight: 600;
     border-radius: 100px;
     color: #FFF;
 }
@@ -151,10 +152,34 @@
 @media (max-width: 770px){
     .agent-profile-side {
         flex: none;
-        height: 100vh;
+        height: fit-content;
         overflow: scroll;
         width: 100%;
         overflow: hidden;
         /* line-height: 300px; */
+    }
+
+    .contact-buttons{
+        position: fixed;
+        bottom: 0;
+        background-color: #FFF;
+        width: 100%;
+        z-index: 800;
+    }
+
+    .about{
+        display: none;
+    }
+
+    .markets{
+        display: none;
+    }
+
+    .rankings{
+        display: none;
+    }
+
+    .contact-button{
+        width: 40%;
     }
 }

@@ -108,6 +108,8 @@
 .property-icons-wrapper {
     display: flex;
     flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: auto 25px 5px 25px;
     text-align: center;
@@ -161,14 +163,32 @@
         width: 70%
     }
 
+    .property-card {
+        margin:auto
+    }
+
+    .property-card li{
+        margin: auto;
+        left: 50%;
+        right: 50%;
+    }
+
     ;
 }
 
 @media (max-width: 770px){
     .agent-properties{
-        height: auto        ;
+        height: auto ;
         display: block;
         flex: none;
         overflow: hidden;
+    }
+
+    .property-list{
+        margin-bottom: 50px;
+    }
+
+    ul{
+        padding: 0;
     }
 }
