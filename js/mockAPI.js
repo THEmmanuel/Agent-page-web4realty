@@ -1,5 +1,7 @@
-// Sine I don't have access to the API for ratemyagent.com. I decided to create this file to simulate the API data with made up placeholder values.
+// Since I don't have access to the API and database for ratemyagent.com. I decided to create this file to simulate the API data with made up placeholder values.
 
+//Contains an array (for the agent's property list)
+//And an object for the agents information
 
 //Data for the ficitous agent's profile.
 export const agentProfile = {

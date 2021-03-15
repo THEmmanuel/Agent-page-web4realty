@@ -4,6 +4,7 @@ import {
 } from './mockAPI.js';
 
 
+//Generates the content in the agent profile based on the data contained in mockAPI.js 
 const renderAgentProfile = () => {
     const agentProfilePicture = document.querySelector('.agent-profile-picture');
     const agentName = document.querySelector('.agent-profile-name');
@@ -19,7 +20,7 @@ const renderAgentProfile = () => {
     agentProfilePicture.src = agentProfile.profile_picture;
 
 
-
+    //Renders the cards containing the agent's markets
     const renderAgentMarkets = () => {
         const agentMarketRows = agentProfile.markets.map(market => {
             return (`<li class = "agent-market">
@@ -36,9 +37,12 @@ const renderAgentProfile = () => {
     renderAgentMarkets();
 }
 
+
+//Renders the cards containing the agent's properties based on the data in mockAPI.js
 const renderAgentProperties = () => {
     const propertiesList = document.querySelector('.properties');
 
+    //Uses the Array.map() method to render the property cards.
     const propertyRows = properties.map(property => {
         return (`<li>
         <div class="property-card">
@@ -93,5 +97,6 @@ const renderAgentProperties = () => {
     propertiesList.innerHTML = propertiesContent;
 }
 
+//Function calls
 renderAgentProperties();
 renderAgentProfile();
