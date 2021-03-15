@@ -18,7 +18,7 @@ const renderAgentProfile = () => {
 
     const renderAgentMarkets = () => {
         const agentMarketRows = agentProfile.markets.map(market => {
-            return (`<li>
+            return (`<li class = "agent-market">
                 <span>
                     ${agentProfile.markets[0]}
                 </span>
